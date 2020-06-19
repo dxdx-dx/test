@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  messages:
+    basename: i18n/Messages,i18n/Pages
+
+  jms:
+    pub-sub-domain: false   #配置消息的类型，如果室true则表示topic消息，如果为false表示Queue消息
+  activemq:
+    user: root  #连接用户名
+    password: root #密码
+    broker-url: tcp://activemq-server:61616 #消息组件的连接主机信息
